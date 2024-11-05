@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+
+        <!--  FONT-AWeSOME  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!--  MAIN CSS  -->
+        <link rel="stylesheet" href="Style/styles.css">
+    </head>
+    <body>
+        <!--  header design  -->
+        <header class="header">
+            <a href="#" class="logo">Portfolio.</a>
+
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <!--  home section design  -->
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Hi, Myself</h3>
+                <h1>Gigina Rajesh</h1>
+                <h3>And I'm a <span class="multiple-text"></span></h3>
+                <p>I am a passionate Front-End Software Engineer with over 5+ years of experience building dynamic and responsive web applications. Skilled in JavaScript, React, HTML5, CSS3, and familiar with modern front-end frameworks and tools.</p>
+                <div class="social-media">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <a href="#" class="btn" onclick="window.open('img/GiginaR_SoftwareEng_FrontEnd.pdf')">Download CV</a>
+            </div>
+
+            <div class="home-img">
+                <img src="img/prpicc.png" class="home_profilepic" alt="ProfilePicture">
+            </div>
+        </section>
+
+        <!--  about section design  -->
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="img/prpicc.png" alt="ProfilePicture">
+            </div>
+
+            <div class="about-content">
+                <h2 class="heading">About <span>Me</span></h2>
+                <h3>FrontEnd Developer</h3>
+                <p>I am a passionate Front End Developer with over 5+ years of experience building responsive, dynamic, and visually appealing web applications. My expertise lies in leveraging modern front-end technologies like HTML5, CSS3, JavaScript (ES6+), and frameworks such as REACT, ANGULAR and VUE.JS to create seamless and intuitive user experiences.</p>
+                <p>I have had the opportunity to work across various industries, from e-commerce to SaaS platforms, contributing to the success of projects by developing clean, maintainable, and efficient code. I take pride in my ability to collaborate effectively with cross-functional teams and UX/UI designers to bring ideas to life while ensuring a smooth user experience.</p>    
+                <p>In addition to my technical skills, I’m constantly exploring new tools and frameworks to stay at the cutting edge of front-end development. My passion for learning keeps me motivated to continuously improve and deliver top-notch solutions.</p>
+                <!-- <a href="#" class="btn">Read More</a> -->
+            </div>
+        </section>
+
+      
+
+        <!--  services section design  -->
+        <section class="portfolio" id="portfolio">
+            <h2 class="heading">Few <span>Works</span></h2>
+
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="img/1.jpg" alt="">
+                    <div class="portfolio-layer">
+                      <h4>Coffee Shop Website</h4>
+                        <p>A responsive Website using HTML5, CSS3, Bootstrap, SASS Aand JS</p>
+                        <a href="https://giginac.github.io/CoffeeShopApp/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        
+                    
+                      </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="img/2.jpg" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Restaurant Webapp</h4>
+                        <p>A responsive Website using pure HTML5, CSS3 and JS</p>
+                        <a href="https://giginac.github.io/RestaurentApp/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="img/3.jpg" alt="">
+                    <div class="portfolio-layer">
+                      <h4>Fitness Website</h4>
+                        <p>Responsive Single page app using  React, Tailwind CSS </p>
+                        <a href=" https://giginac.github.io/FitnessCenter/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a></i></a>
+                    </div>
+                </div>
+
+                <!-- <div class="portfolio-box">
+                    <img src="img/4.jpg" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Todo App</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div> -->
+
+              
+            </div>
+        </section>
+
+        <!--  contact section design  -->
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me!</span></h2>
+
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Mobile Number" required>
+                    <input type="text" placeholder="Email Subject" required>
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+        </section>
+
+        <!--  contact section design  -->
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2024 by @Gigina | All Rights Reserved.</p>
+            </div>
+
+            <div class="footer-iconTop">
+                <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+            </div>
+        </footer>
+
+        <!--  TYPED JS  -->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+        <!--  SCROLL REVEAL  -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--  MAIN JS  -->
+        <script src="JS/main.js"></script>
+    </body>
+</html>
