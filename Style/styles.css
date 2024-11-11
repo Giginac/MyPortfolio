@@ -112,7 +112,15 @@ span {
     gap: .5rem;
     justify-content: space-around;
   }
-
+  /* .details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+  } */
   .icon {
     cursor: pointer;
     height: 3.5rem;
@@ -208,6 +216,7 @@ span {
 }
 
 .about-content h2 {
+    
     line-height: 1.2;
 }
 
@@ -227,7 +236,9 @@ span {
 
 .skills h2 {
     margin-bottom: 5rem;
- 
+    /* display: inline-block;
+    left: 50%;
+    transform: translateX(-50%); */
 }
 
 .skills .skills-row {
@@ -391,6 +402,11 @@ span {
         background-position: 0 0;
     }
 }
+
+
+
+
+
 
 
 .portfolio {
