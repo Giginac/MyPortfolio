@@ -52,16 +52,9 @@ ScrollReveal({
 ScrollReveal().reveal('.home-content, heading', { origin: 'top' });
 ScrollReveal().reveal('.home-img, .portfolio-box, .contact form', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
-ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+ScrollReveal().reveal('.home-content p, .about-content', { origin: 'bottom' });
 ScrollReveal().reveal('.skills-column', { origin: 'left' });
-// ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+
 
 /*================================= typed js ===================================*/
 
-// const typed = new Typed('.multiple-text', {
-//     strings: ['Software Engineer - FrontEnd'],
-//     typeSpeed: 70,
-//     backSpeed: 70,
-//     backDelay: 1000,
-//     loop: true,
-// });
