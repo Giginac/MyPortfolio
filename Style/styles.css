@@ -236,9 +236,7 @@ span {
 
 .skills h2 {
     margin-bottom: 5rem;
-    /* display: inline-block;
-    left: 50%;
-    transform: translateX(-50%); */
+    
 }
 
 .skills .skills-row {
@@ -264,8 +262,6 @@ span {
 
 .skills-box .skills-content {
     position: relative;
-    border: .2rem solid var(--main-color);
-    border-radius: .6rem;
     padding: .5rem 1.5rem;
     z-index: 1;
     overflow: hidden;
@@ -307,8 +303,25 @@ span {
     border: .1rem solid var(--main-color);
     padding: .5rem;
     margin: 1rem 0;
+    /* animation : progressbar 3s ease-in-out forwards;
+    opacity:0; */
 }
+.skills.show-animate .skills-content .progress .bar {
 
+    animation : progressbar 1s ease-in-out forwards;
+    opacity:0;
+}
+@keyframes  progressbar{
+    0%{
+        width:0;
+        opacity:0;
+    }
+    100%{
+       width:100%;
+        opacity:1;
+    }
+    
+}
 .skills-content .progress .bar span {
     display: block;
     height: 100%;
