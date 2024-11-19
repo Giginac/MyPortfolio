@@ -11,6 +11,16 @@
 
         <!--  MAIN CSS  -->
         <link rel="stylesheet" href="Style/styles.css">
+
+          <!-- Form Email Script -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+            publicKey: "4O7bBidDQeccBOIBm",
+        });
+        })();
+    </script>
     </head>
     <body>
         <!--  header design  -->
@@ -51,7 +61,10 @@
 
         <!--  about section design  -->
         <section class="about" id="about">
-           
+            <!-- <div class="about-img">
+                <img src="img/prpicc.png" alt="ProfilePicture">
+            </div> -->
+
             <div class="about-content">
                 <h2 class="heading">About <span>Me</span></h2>
                 <!-- <h3>Software Engineer - Front End</h3> -->
@@ -141,14 +154,23 @@
 
         <!--  services section design  -->
         <section class="portfolio" id="portfolio">
-            <h2 class="heading">Few <span>Works</span></h2>
+            <h2 class="heading">latest <span>Projects</span></h2>
 
             <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="img/4.jpg" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Todo App</h4>
+                        <p>A simple Todo list where an user can add, update and delete the day to tasks.<br> Tech stack: React</p>
+                        <a href="https://giginac.github.io/ReactTodoApp/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
                 <div class="portfolio-box">
                     <img src="img/1.jpg" alt="">
                     <div class="portfolio-layer">
                       <h4>Coffee Shop site</h4>
-                        <p>Professional-grade coffee shop website that’s user-friendly and highly responsive.The site showcases the shop's menu, ambiance, and unique brand style.<br>Tech stack: HTML5, CSS3, SASS, JS</p>
+                        <p>Professional-grade coffee shop website that’s user-friendly and highly responsive which showcases the shop's menu and unique brand style.<br>Tech stack: HTML5, CSS3, SASS, JS</p>
                         <a href="https://giginac.github.io/CoffeeShopApp/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                         
                     
@@ -169,19 +191,12 @@
                     <img src="img/3.jpg" alt="">
                     <div class="portfolio-layer">
                       <h4>Fitness Website</h4>
-                        <p>Modern, minimalistic, high-performance responsive website designed for a gym, crafted to promote membership plans, highlight facilities, and offer an engaging user experience.<br>Tech stack: REACT, TAILWINDCSS</p>
+                        <p>Modern, minimalistic, high-performance responsive website designed for a gym, crafted to promote an engaging user experience.<br>Tech stack: REACT, TAILWINDCSS</p>
                         <a href=" https://giginac.github.io/FitnessCenter/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a></i></a>
                     </div>
                 </div>
 
-                <!-- <div class="portfolio-box">
-                    <img src="img/4.jpg" alt="">
-                    <div class="portfolio-layer">
-                        <h4>Todo App</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div> -->
+                
 
               
             </div>
@@ -193,15 +208,15 @@
 
             <form action="#">
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name" required>
-                    <input type="email" placeholder="Email Address" required>
+                    <input type="text" placeholder="Full Name" id="FullName" required>
+                    <input type="email" placeholder="Email Address"  id="Email" required>
                 </div>
                 <div class="input-box">
-                    <input type="number" placeholder="Mobile Number" required>
-                    <input type="text" placeholder="Email Subject" required>
+                    <input type="tel" placeholder="Mobile Number with country code" id="Phone" required>
+                    <input type="text" placeholder="Email Subject" id="EmailSubject"required>
                 </div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                <input type="submit" value="Send Message" class="btn"><a href="mailto:giginacleetus18@gmail.com"></a>
+                <textarea name="" id="txtMessage" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message" class="btn" onclick= 'sendMessage()'>
             </form>
         </section>
 
