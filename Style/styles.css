@@ -112,15 +112,7 @@ span {
     gap: .5rem;
     justify-content: space-around;
   }
-  /* .details-container {
-    padding: 1.5rem;
-    flex: 1;
-    background: white;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    text-align: center;
-  } */
+ 
   .icon {
     cursor: pointer;
     height: 3.5rem;
@@ -247,6 +239,7 @@ span {
 
 .skills-row .skills-column {
     flex: 1 1 40rem;
+    background-color:#181717;
 }
 
 .skills-column .title {
@@ -415,12 +408,6 @@ span {
         background-position: 0 0;
     }
 }
-
-
-
-
-
-
 
 .portfolio {
     background: var(--snd-bg-color);
